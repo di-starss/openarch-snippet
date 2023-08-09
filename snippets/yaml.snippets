@@ -9,3 +9,21 @@ snippet vyos_route_static
   route_static:
     route: ${1:route}
     next_hop: ${2:next_hop}
+
+snippet vyos_banner
+	- name: ${1:task_description}
+	  vyos_banner:
+	    banner: ${2}
+	    #text: ${3}
+	    #state: ${4:present}
+	    #provider: ${5}
+
+snippet vyos_command
+	- name: ${1:task_description}
+	  vyos_command:
+	    commands: ${2}
+	    #retries: ${3:10}
+	    #interval: ${4:1}
+	    #provider: ${5}
+	    #wait_for: ${6}
+	    #match: ${7:all}
