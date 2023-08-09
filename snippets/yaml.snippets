@@ -7,7 +7,7 @@ snippet vyos_banner
 	    #provider: ${5}
 
 snippet vyos_command
-	- dasd: ${1:task_description}
+    dasd:
 	  vyos_command:
 	    commands: ${2}
 	    #retries: ${3:10}
