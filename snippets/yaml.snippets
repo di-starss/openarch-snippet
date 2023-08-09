@@ -1,0 +1,6 @@
+snippet vyos_interface
+				interface:
+					- name: ${1:eth0}
+						family: ${1:ethernet}
+						address: ${1:172.17.17.17/24}
+						description: ${1:wan}
