@@ -1,13 +1,11 @@
 snippet vyos_interface
-        - name vyos_interface
-          interface:
-            name: ${1:name}
-            family: ${2:ethernet}
-            address: ${3:address}
-            description: ${4:lan}
+  interface:
+    name: ${1:name}
+    family: ${2:ethernet}
+    address: ${3:address}
+    description: ${4:lan}
 
 snippet vyos_route_static
-        - name: vyos_route_static
-          route_static:
-            route: ${1:route}
-            next_hop: ${2:next_hop}
+  route_static:
+    route: ${1:route}
+    next_hop: ${2:next_hop}
