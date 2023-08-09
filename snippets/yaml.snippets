@@ -1,5 +1,6 @@
 snippet vyos_interface
-		interface:
-		  asd: ${1: asdasd}
-		  asd: ${2: asdasdasd}
-		  asd: ${3: 172.22.22.0/24}
+  interface:
+	  - name: ${1: eth0}
+		  family: ${2: ethernet}
+		  address: ${3: 172.22.22.0/24}
+      description: ${4: LAN}
