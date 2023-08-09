@@ -7,11 +7,10 @@ snippet vyos_banner
 	    #provider: ${5}
 
 snippet vyos_command
-	- name: ${1:task_description}
-	  vyos_command:
-	    commands: ${2}
-	    #retries: ${3:10}
-	    #interval: ${4:1}
-	    #provider: ${5}
-	    #wait_for: ${6}
-	    #match: ${7:all}
+  vyos_command:
+    commands: ${2}
+    #retries: ${3:10}
+    #interval: ${4:1}
+    #provider: ${5}
+    #wait_for: ${6}
+    #match: ${7:all}
